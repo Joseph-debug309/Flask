@@ -35,15 +35,7 @@ def calculator():
         return jsonify({"The answer is" : sum})
 
 
-# create a route that is able to calculate the simple interest given the pricipal as 20000, rate as 7% and time as 8 years.
-@app.route("/api/simple_calculator" , methods=["POST"])
-def simple_calculator():
-    if request.method == "POST":
-        P = 20000
-        r = 7
-        t = 8
-        SI = P * r * t / 100
-        return jsonify({"the answer is" : SI})
+
 
 
 
