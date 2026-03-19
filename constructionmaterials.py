@@ -40,7 +40,7 @@ def constructionmaterials():
         photo.save(photo_path)
 
          # establish a connection to the db
-        connection = pymysql.connect(host = "localhost", user = "root", password ="", database = "online")
+        connection = pymysql.connect(host="localhost",user="root",password="",database="online")
 
         #create a cursor
         cursor = connection.cursor()
